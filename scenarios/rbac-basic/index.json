@@ -1,0 +1,28 @@
+{
+  "title": "Kubernetes RBAC: Basic Access Control",
+  "description": "Create roles and bind them to service accounts with limited access.",
+  "difficulty": "beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Namespace and Service Account",
+        "text": "step1.md"
+      },
+      {
+        "title": "Define and Bind a Role",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal"
+  }
+}
