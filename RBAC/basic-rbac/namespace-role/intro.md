@@ -1,12 +1,16 @@
-# Namespace-Scoped Role and RoleBinding for Pod Read Access
+# Namespace-Scoped Role and RoleBinding Challenge
 
-In this scenario, you will learn about basic RBAC (Role-Based Access Control) concepts in Kubernetes by creating and using namespace-scoped Roles and RoleBindings.
+In this challenge, you'll apply your knowledge of RBAC (Role-Based Access Control) in Kubernetes by creating namespace-scoped Roles and RoleBindings.
 
-You will:
-- Create a dedicated namespace for testing
-- Create a Role that allows read-only access to Pods
-- Create a RoleBinding to assign the Role to a user
-- Verify the permissions work as expected
-- Test the limitations of the Role
+## Your Challenge:
 
-RBAC is crucial for securing your Kubernetes cluster by ensuring users and service accounts only have access to the resources they need.
+You need to configure RBAC to allow a user named `pod-reader` to have read-only access to pods in a specific namespace, while ensuring they cannot access other resources or perform other actions.
+
+The challenge will test your understanding of:
+- Creating namespace-scoped Roles with specific permissions
+- Binding Roles to users with RoleBindings
+- Testing and verifying RBAC permissions
+
+A testing environment has already been set up with a namespace and some running pods. Your task is to implement the proper RBAC controls.
+
+Good luck!

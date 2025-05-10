@@ -1,6 +1,6 @@
 # Congratulations!
 
-You have successfully completed the Namespace-Scoped Role and RoleBinding scenario.
+You have successfully completed the Namespace-Scoped Role and RoleBinding challenge.
 
 ## What you've learned:
 
@@ -9,11 +9,18 @@ You have successfully completed the Namespace-Scoped Role and RoleBinding scenar
 - How to verify and test RBAC permissions
 - The scope and limitations of namespace-bound Roles
 
-## Next Steps:
+## Challenge Recap:
+
+In this challenge, you:
+1. Created a Role that allowed read-only access to pods in the rbac-test namespace
+2. Created a RoleBinding that connected the pod-reader user to the Role
+3. Verified that the permissions worked correctly and were appropriately restricted
+
+## Next Challenges:
 
 - Try creating Roles with permissions for different resources or with different verbs
-- Learn about ClusterRoles and ClusterRoleBindings for cluster-wide permissions
-- Explore how to use Groups in RBAC for more efficient permission management
-- Check out the "Role With Multiple Resource Permissions" scenario to expand your RBAC skills
+- Create a ClusterRole and ClusterRoleBinding for cluster-wide permissions
+- Set up RBAC for a group of users rather than a single user
+- Configure RBAC for a ServiceAccount to secure your application pods
 
 Keep exploring Kubernetes RBAC to build secure and properly isolated environments!

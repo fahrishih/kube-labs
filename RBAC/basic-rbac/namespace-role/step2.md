@@ -1,9 +1,34 @@
-# Creating a Namespace-Scoped Role
+# Hints for Creating the Role
 
-A Role contains rules that represent a set of permissions. Permissions are purely additive (there are no "deny" rules).
+If you're stuck on creating the Role, here are some more detailed hints.
 
-Let's create a Role that allows read-only access to pods in our namespace:
+<details>
+<summary>Role Structure Hint</summary>
 
+A Role needs these key components:
+- apiVersion: rbac.authorization.k8s.io/v1
+- kind: Role
+- metadata: with name and namespace
+- rules: defining what resources and actions are permitted
+
+</details>
+
+<details>
+<summary>Complete Role Example</summary>
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: rbac-test
+  name: pod-reader
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
+```
+
+You can create this Role with:
 ```bash
 cat <<EOF > pod-reader-role.yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -20,15 +45,11 @@ EOF
 kubectl apply -f pod-reader-role.yaml
 ```
 
-Let's understand the components of this Role:
-- `apiGroups`: Specifies which API groups the permissions apply to. The core API group (containing pods, services, etc.) is represented by an empty string.
-- `resources`: Defines which resource types this role applies to, in this case, pods.
-- `verbs`: Lists the operations that can be performed, here we're allowing read-only operations.
+</details>
 
-View the created Role:
+Remember that:
+- The empty string `""` in apiGroups refers to the core API group
+- The `verbs` define what actions are permitted on the resources
+- This Role is namespace-scoped, so it only applies to the namespace listed in the metadata
 
-```bash
-kubectl get role pod-reader -n rbac-test -o yaml
-```
-
-This Role only grants permissions within the `rbac-test` namespace, as it's namespace-scoped.
+Try creating your Role before moving on to the RoleBinding!

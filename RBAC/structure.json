@@ -5,7 +5,7 @@
     { 
       "path": "basic-rbac/namespace-role",
       "title": "Namespace-Scoped Role and RoleBinding for Pod Read Access",
-      "description": "Learn how to create and use namespace-scoped Roles and RoleBindings to grant pod read access" 
+      "description": "Challenge: Create and verify namespace-scoped Roles and RoleBindings to grant pod read access" 
     }
   ]
 }
