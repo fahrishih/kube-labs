@@ -1,0 +1,38 @@
+{
+  "title": "Namespace-Scoped Role and RoleBinding for Pod Read Access",
+  "description": "Learn how to create and use namespace-scoped Roles and RoleBindings to grant pod read access",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Setting Up the Environment",
+        "text": "step1.md"
+      },
+      {
+        "title": "Creating a Namespace-Scoped Role",
+        "text": "step2.md"
+      },
+      {
+        "title": "Creating a RoleBinding",
+        "text": "step3.md"
+      },
+      {
+        "title": "Testing the RBAC Configuration",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
