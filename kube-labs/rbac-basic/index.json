@@ -3,6 +3,7 @@
   "description": "Create roles and bind them to service accounts with limited access.",
   "difficulty": "beginner",
   "time": "10",
+  "imageid": "kubernetes-kubeadm-2nodes",
   "details": {
     "steps": [
       {
