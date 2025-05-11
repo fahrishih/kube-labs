@@ -33,6 +33,4 @@ A Role needs apiGroups, resources, and verbs. For pod reading, you need the core
 Your RoleBinding needs a reference to the Role you created and should specify the "pod-reader" user in its subjects section.
 </details>
 
-> Note: For this challenge, we've simulated the existence of a user named "pod-reader". In a real cluster, you would need to create certificates and configure authentication properly.
-
 Begin your challenge now!

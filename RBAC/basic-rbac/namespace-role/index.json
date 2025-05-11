@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Challenge: RBAC for Pod Reading",
-        "text": "step1.md"
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
       },
       {
         "title": "Hints for Creating the Role",
