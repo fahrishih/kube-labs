@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 # Create namespace rbac-test
 echo "Creating namespace rbac-test..."
